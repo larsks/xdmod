@@ -29,7 +29,7 @@ function getToken()
 function setCookies()
 {
     // Obtain and set a cookie for the user's REST token.
-    setcookie('xdmod_token', getToken(), 0, '/', '', true, true);
+    setcookie('xdmod_token', getToken(), 0, '/', '', false, false);
 }
 
 /**

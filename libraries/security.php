@@ -16,7 +16,7 @@ function start_session()
         $cParams["lifetime"],
         $cParams["path"],
         $cParams['domain'],
-        true
+        false
     );
     @session_start();
 }
