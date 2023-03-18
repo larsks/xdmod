@@ -40,7 +40,7 @@ class DatabaseHelper
         );
         // TODO: If db_host is not localhost, need to set $localHost to
         // the correct hostname or IP address.
-        $localHost = $settings['db_host'];
+        $localHost = '%';
 
         MySQLHelper::grantAllPrivileges(
             $settings['db_host'],
@@ -99,7 +99,7 @@ class DatabaseHelper
 
             // TODO: If db_host is not localhost, need to set $localHost to
             // the correct hostname or IP address.
-            $localHost = $settings['db_host'];
+            $localHost = '%';
 
             $console->displayMessage(
                 "Granting privileges on database `$database`."
